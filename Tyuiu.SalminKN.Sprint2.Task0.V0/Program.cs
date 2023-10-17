@@ -10,17 +10,13 @@ namespace Tyuiu.SalminKN.Sprint2.Task0.V0
     {
         static void Main(string[] args)
         {
-            DataService ds = new DataService();
-            int x = 15;
-            int y = 16;
-            bool[] res = new bool[6];
-            res = ds.GetCompareOperations(x, y);
+            int y = 0, k = 7;
 
+            if (k > 0) if (k > 10) y = 1;
 
-            for (int i = 0; i < res.Length; i++)
-            {
-                Console.WriteLine(res[i]);
-            }
+                else y = 2;
+            else y = 3;
+            Console.WriteLine(y);
             Console.ReadKey();
         }
     }
