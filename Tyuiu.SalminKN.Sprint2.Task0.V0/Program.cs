@@ -10,12 +10,11 @@ namespace Tyuiu.SalminKN.Sprint2.Task0.V0
     {
         static void Main(string[] args)
         {
-            int y = 0, k = 7;
+            int x = 2;
 
-            if (k > 0) if (k > 10) y = 1;
+            int y = (x > 0) && (x < 2) ? x * x : -x;
 
-                else y = 2;
-            else y = 3;
+
             Console.WriteLine(y);
             Console.ReadKey();
         }
