@@ -10,46 +10,30 @@ namespace Tyuiu.SalminKN.Sprint2.Task0.V0
     {
         static void Main(string[] args)
         {
-            int x = Convert.ToInt32(Console.ReadLine());
+            int x = -2;
 
-            int z = 1; switch (2 * x)
+            int y = 0;
+
+            switch (x)
 
             {
 
-                case 1:
+                case -3:
 
-                    z = 10;
+                case -2:
 
-                    break;
+                case -1: y = -x; break;
+
+                case 0: y = 5; break;
+
+                case 3:
 
                 case 2:
 
-                    z *= x;
-
-                    break;
-
-                case 4:
-
-                    z += x + 5;
-
-                    break;
-
-                case 6:
-
-                case 8:
-
-                    z = 3;
-
-                    break;
-
-                default:
-
-                    z = 0;
-
-                    break;
+                case 1: y = 2 * x; break;
 
             }
-            Console.WriteLine(z);
+            Console.WriteLine(y);
             Console.ReadKey();
 
 
@@ -57,4 +41,4 @@ namespace Tyuiu.SalminKN.Sprint2.Task0.V0
         
         }
     }
-}
+
