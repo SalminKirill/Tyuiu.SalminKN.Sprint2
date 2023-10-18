@@ -10,29 +10,9 @@ namespace Tyuiu.SalminKN.Sprint2.Task0.V0
     {
         static void Main(string[] args)
         {
-            int x = -2;
+            int x = 5;
 
-            int y = 0;
-
-            switch (x)
-
-            {
-
-                case -3:
-
-                case -2:
-
-                case -1: y = -x; break;
-
-                case 0: y = 5; break;
-
-                case 3:
-
-                case 2:
-
-                case 1: y = 2 * x; break;
-
-            }
+            int y = (x <= 0) || (x >= 10) ? 1 + x * 5 : 10 - 2 * x;
             Console.WriteLine(y);
             Console.ReadKey();
 
